@@ -13,9 +13,15 @@ import { ColorModeSwitcher, GithubIcon } from './components/icons';
 import ActivatorLine from './components/activatorLine';
 import Login from './components/login';
 import ActivatorLte from './components/activatorLte';
+import useNetwork from './hooks/connection';
 
 function Hello() {
-  return (
+  let connnection = useNetwork();
+  return !connnection ? (
+    <Heading fontSize={'4xl'} textAlign={'center'} marginBlock={'300px'}>
+      Please make sure you are connected to an internet connection
+    </Heading>
+  ) : (
     <>
       <ColorModeSwitcher
         style={{

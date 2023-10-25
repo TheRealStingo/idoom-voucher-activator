@@ -135,7 +135,6 @@ function ActivatorLte() {
           </Button>
         </VStack>
       </Center>
-      
     </>
   );
 }
