@@ -9,7 +9,7 @@ import {
   useToast,
 } from '@chakra-ui/react';
 import { useDataStore } from '../hooks/session';
-import { activateBackup } from '../utils/fetch';
+import { activateBackup } from '../utils/fetchLine';
 import { useState } from 'react';
 function User(props: any) {
   const { userData } = props;

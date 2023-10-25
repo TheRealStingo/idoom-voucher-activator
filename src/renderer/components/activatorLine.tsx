@@ -10,8 +10,8 @@ import {
   useToast,
 } from '@chakra-ui/react';
 import { useState, useEffect } from 'react';
-import { getNumberData, redeemVoucher } from '../utils/fetch';
-function Activator() {
+import { getNumberData, redeemVoucher } from '../utils/fetchLine';
+function ActivatorLine() {
   const [nd, setNd] = useState('');
   const [voucher, setVoucher] = useState('');
   const [isFetched, setIsfetched] = useState(false);
@@ -135,9 +135,8 @@ function Activator() {
           </Button>
         </VStack>
       </Center>
-      
     </>
   );
 }
 
-export default Activator;
+export default ActivatorLine;

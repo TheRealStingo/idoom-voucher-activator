@@ -10,9 +10,10 @@ import {
   Link,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher, GithubIcon } from './components/icons';
-import Activator from './components/activator';
-
+import ActivatorLine from './components/activatorLine';
 import Login from './components/login';
+import ActivatorLte from './components/activatorLte';
+
 function Hello() {
   return (
     <>
@@ -32,15 +33,18 @@ function Hello() {
       />
       <Tabs size={'lg'} mt={16} isFitted variant="enclosed" minH={'100vw'}>
         <Center>
-          <TabList minW={'70%'}>
-            <Tab minW={'50%'}>Activator</Tab>
-            <Tab minW={'50%'}>Client Help</Tab>
+          <TabList minW={'80%'}>
+            <Tab minW={'33%'}>Activator Line </Tab>
+            <Tab minW={'33%'}>Activator LTE</Tab>
+            <Tab minW={'33%'}>Client Help</Tab>
           </TabList>
         </Center>
-
         <TabPanels>
           <TabPanel>
-            <Activator />
+            <ActivatorLine />
+          </TabPanel>
+          <TabPanel>
+            <ActivatorLte />
           </TabPanel>
           <TabPanel>
             <Login />

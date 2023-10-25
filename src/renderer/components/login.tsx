@@ -9,7 +9,7 @@ import {
   Code,
   useToast,
 } from '@chakra-ui/react';
-import { login } from '../utils/fetch';
+import { login } from '../utils/fetchLine';
 import { useState, useEffect } from 'react';
 import User from './user';
 import { useDataStore } from '../hooks/session';
